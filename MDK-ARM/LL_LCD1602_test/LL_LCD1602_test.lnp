@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"ll_lcd1602_test\startup_stm32f103xb.o"
+"ll_lcd1602_test\delays.o"
+"ll_lcd1602_test\main.o"
+"ll_lcd1602_test\gpio.o"
+"ll_lcd1602_test\tim.o"
+"ll_lcd1602_test\stm32f1xx_it.o"
+"ll_lcd1602_test\hd44780.o"
+"ll_lcd1602_test\stm32f1xx_ll_gpio.o"
+"ll_lcd1602_test\stm32f1xx_ll_pwr.o"
+"ll_lcd1602_test\stm32f1xx_ll_exti.o"
+"ll_lcd1602_test\stm32f1xx_ll_tim.o"
+"ll_lcd1602_test\stm32f1xx_ll_dma.o"
+"ll_lcd1602_test\stm32f1xx_ll_rcc.o"
+"ll_lcd1602_test\stm32f1xx_ll_utils.o"
+"ll_lcd1602_test\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "LL_LCD1602_test\LL_LCD1602_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LL_LCD1602_test.map" -o LL_LCD1602_test\LL_LCD1602_test.axf
